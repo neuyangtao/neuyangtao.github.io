@@ -1,0 +1,672 @@
+DIV.calendar {
+	POSITION: relative
+}
+.calendar {
+	BORDER-RIGHT: #bdb2bf 1px solid; BORDER-TOP: #bdb2bf 1px solid; FONT-SIZE: 11px; BACKGROUND: url(normal-bg.gif); BORDER-LEFT: #bdb2bf 1px solid; CURSOR: default; COLOR: #000; BORDER-BOTTOM: #bdb2bf 1px solid; FONT-FAMILY: "trebuchet ms",verdana,tahoma,sans-serif
+}
+.calendar TABLE {
+	BORDER-RIGHT: #bdb2bf 1px solid; BORDER-TOP: #bdb2bf 1px solid; FONT-SIZE: 11px; BACKGROUND: url(normal-bg.gif); BORDER-LEFT: #bdb2bf 1px solid; CURSOR: default; COLOR: #000; BORDER-BOTTOM: #bdb2bf 1px solid; FONT-FAMILY: "trebuchet ms",verdana,tahoma,sans-serif
+}
+.calendar {
+	BORDER-LEFT-COLOR: #797979; BORDER-BOTTOM-COLOR: #797979; BORDER-TOP-COLOR: #797979; BORDER-RIGHT-COLOR: #797979
+}
+.calendar .button {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; BACKGROUND: url(title-bg.gif) repeat-x 0px 100%; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 2px; TEXT-ALIGN: center
+}
+.calendar .nav {
+	FONT-FAMILY: verdana,tahoma,sans-serif
+}
+.calendar .nav DIV {
+	
+}
+.calendar THEAD TR {
+	BACKGROUND: url(title-bg.gif) repeat-x 0px 100%; COLOR: #000
+}
+.calendar THEAD .title {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; BACKGROUND: url(title-bg.gif) repeat-x 0px 100%; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 2px; TEXT-ALIGN: center
+}
+.calendar THEAD .headrow {
+	
+}
+.calendar THEAD .name {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 2px; BORDER-BOTTOM: #797979 1px solid; TEXT-ALIGN: center
+}
+.calendar THEAD .weekend {
+	COLOR: #c44
+}
+.calendar THEAD .hilite {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; BACKGROUND: url(hover-bg.gif); PADDING-BOTTOM: 1px; PADDING-TOP: 2px; BORDER-BOTTOM: #797979 1px solid
+}
+.calendar THEAD .active {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 3px; BACKGROUND: url(active-bg.gif); PADDING-BOTTOM: 0px; COLOR: #fff; PADDING-TOP: 3px; BORDER-BOTTOM: #797979 1px solid
+}
+.calendar THEAD .daynames {
+	BACKGROUND: url(dark-bg.gif)
+}
+.calendar TBODY .day {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; WIDTH: 2em; COLOR: #000; PADDING-TOP: 2px; FONT-FAMILY: verdana,tahoma,sans-serif; TEXT-ALIGN: right
+}
+.calendar TBODY .othermonth {
+	FONT-SIZE: 80%; COLOR: #999
+}
+.calendar TBODY .oweekend {
+	COLOR: #f99
+}
+.calendar TABLE .wn {
+	BORDER-RIGHT: #797979 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 2px; BACKGROUND: url(dark-bg.gif); PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.calendar TBODY .rowhilite TD {
+	BACKGROUND: url(rowhover-bg.gif)
+}
+.calendar TBODY .rowhilite TD.wn {
+	BACKGROUND: url(rowhover-bg.gif)
+}
+.calendar TBODY TD.today {
+	FONT-WEIGHT: bold
+}
+.calendar TBODY TD.hilite {
+	BORDER-RIGHT: #bbb 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #bbb 1px solid; PADDING-LEFT: 1px; BACKGROUND: url(hover-bg.gif); PADDING-BOTTOM: 1px; BORDER-LEFT: #bbb 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #bbb 1px solid
+}
+.calendar TBODY TD.active {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; PADDING-TOP: 2px
+}
+.calendar TBODY TD.weekend {
+	COLOR: #c44
+}
+.calendar TBODY TD.selected {
+	BORDER-RIGHT: #797979 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #797979 1px solid; PADDING-LEFT: 1px; FONT-WEIGHT: bold; BACKGROUND: url(active-bg.gif); PADDING-BOTTOM: 1px; BORDER-LEFT: #797979 1px solid; COLOR: #fff; PADDING-TOP: 1px; BORDER-BOTTOM: #797979 1px solid
+}
+.calendar TBODY .disabled {
+	COLOR: #999
+}
+.calendar TBODY .emptycell {
+	VISIBILITY: hidden
+}
+.calendar TBODY .emptyrow {
+	DISPLAY: none
+}
+.calendar TFOOT .footrow {
+	BACKGROUND: #565; COLOR: #fff; TEXT-ALIGN: center
+}
+.calendar TFOOT .ttip {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; BACKGROUND: url(status-bg.gif) repeat-x 0px 0px; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 2px
+}
+.calendar TFOOT .hilite {
+	BORDER-RIGHT: #084 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #084 1px solid; PADDING-LEFT: 1px; BACKGROUND: #afa; PADDING-BOTTOM: 1px; BORDER-LEFT: #084 1px solid; COLOR: #000; PADDING-TOP: 1px; BORDER-BOTTOM: #084 1px solid
+}
+.calendar TFOOT .active {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 2px; BACKGROUND: #7c7; PADDING-BOTTOM: 0px; PADDING-TOP: 2px
+}
+.calendar .combo {
+	BORDER-RIGHT: #797979 1px solid; BORDER-TOP: #797979 0px solid; DISPLAY: none; FONT-SIZE: 90%; Z-INDEX: 100; BACKGROUND: url(normal-bg.gif); LEFT: 0px; BORDER-LEFT: #797979 1px solid; WIDTH: 4em; CURSOR: default; COLOR: #000; BORDER-BOTTOM: #797979 1px solid; POSITION: absolute; TOP: 0px
+}
+.calendar .combo .label {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+.calendar .combo .label-IEfix {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+.calendar .combo .label-IEfix {
+	WIDTH: 4em
+}
+.calendar .combo .hilite {
+	BACKGROUND: url(hover-bg.gif); COLOR: #000
+}
+.calendar .combo .active {
+	FONT-WEIGHT: bold; BACKGROUND: url(active-bg.gif); COLOR: #fff
+}
+.calendar TD.time {
+	PADDING-RIGHT: 0px; BORDER-TOP: #797979 1px solid; PADDING-LEFT: 0px; BACKGROUND: url(dark-bg.gif); PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+.calendar TD.time .hour {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 6px; FONT-WEIGHT: bold; BACKGROUND: url(normal-bg.gif); PADDING-BOTTOM: 0px; COLOR: #000; PADDING-TOP: 0px
+}
+.calendar TD.time .minute {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 6px; FONT-WEIGHT: bold; BACKGROUND: url(normal-bg.gif); PADDING-BOTTOM: 0px; COLOR: #000; PADDING-TOP: 0px
+}
+.calendar TD.time .ampm {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 6px; FONT-WEIGHT: bold; BACKGROUND: url(normal-bg.gif); PADDING-BOTTOM: 0px; COLOR: #000; PADDING-TOP: 0px
+}
+.calendar TD.time .hour {
+	FONT-FAMILY: monospace
+}
+.calendar TD.time .minute {
+	FONT-FAMILY: monospace
+}
+.calendar TD.time .ampm {
+	TEXT-ALIGN: center
+}
+.calendar TD.time .colon {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.calendar TD.time SPAN.hilite {
+	BACKGROUND: url(hover-bg.gif); COLOR: #000
+}
+.calendar TD.time SPAN.active {
+	BACKGROUND: url(active-bg.gif); COLOR: #fff
+}
+A {
+	COLOR: #000080; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+BODY {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 76%; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; FONT-FAMILY: Tahoma, Arial; TEXT-ALIGN: center
+}
+BODY#portal-body {
+	HEIGHT: 100%; BACKGROUND-COLOR: #e9eff5
+}
+BODY * {
+	FONT-SIZE: 1em
+}
+.font-xx-small {
+	FONT-SIZE: 0.7em
+}
+.font-x-small {
+	FONT-SIZE: 0.8em
+}
+.font-small {
+	FONT-SIZE: 0.9em
+}
+.font-large {
+	FONT-SIZE: 1.1em
+}
+.font-x-large {
+	FONT-SIZE: 1.2em
+}
+.font-xx-large {
+	FONT-SIZE: 1.3em
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+SELECT {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 5px 0px 10px 20px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+IMG {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px
+}
+INPUT {
+	FONT-SIZE: 0.8em
+}
+BUTTON {
+	FONT-SIZE: 0.8em
+}
+SELECT {
+	FONT-SIZE: 0.8em
+}
+TEXTAREA {
+	FONT-SIZE: 1em; FONT-FAMILY: Arial
+}
+.form-button {
+	BORDER-RIGHT: #9fb7d3 1px solid; BORDER-TOP: #9fb7d3 1px solid; BORDER-LEFT: #9fb7d3 1px solid; BORDER-BOTTOM: #9fb7d3 1px solid
+}
+.form-button-hover {
+	BORDER-RIGHT: #9fb7d3 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #9fb7d3 1px solid
+}
+.form-text {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.tree-js-pop-up DIV {
+	BORDER-RIGHT: #ffffff 2px outset; PADDING-RIGHT: 4px; BORDER-TOP: #ffffff 2px outset; DISPLAY: none; PADDING-LEFT: 4px; Z-INDEX: 10; PADDING-BOTTOM: 4px; BORDER-LEFT: #ffffff 2px outset; PADDING-TOP: 4px; BORDER-BOTTOM: #ffffff 2px outset; POSITION: absolute; BACKGROUND-COLOR: #d3d3d3; TEXT-ALIGN: left
+}
+.pop-up-outer {
+	BORDER-RIGHT: #383838 1px solid; BORDER-TOP: #383838 1px solid; BORDER-LEFT: #383838 1px solid; BORDER-BOTTOM: #383838 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.pop-up-inner {
+	BORDER-RIGHT: #747474 1px solid; BORDER-TOP: #747474 1px solid; BORDER-LEFT: #747474 1px solid; BORDER-BOTTOM: #747474 1px solid
+}
+.pop-up-header {
+	HEIGHT: 25px; BACKGROUND-COLOR: #000000
+}
+.pop-up-title {
+	PADDING-LEFT: 10px; FONT-WEIGHT: bold; COLOR: #ffffff
+}
+.pop-up-close A {
+	COLOR: #ffffff; MARGIN-RIGHT: 7px; WHITE-SPACE: nowrap; TEXT-DECORATION: underline
+}
+.alpha {
+	BACKGROUND-COLOR: #9fb7d3
+}
+.alpha-gradient {
+	BACKGROUND: url(/html/themes/classic/color_schemes/01/portlet_title_bg_gradient.gif) repeat-x
+}
+.alpha-neg-alert {
+	COLOR: #ff0000
+}
+.alpha-pos-alert {
+	COLOR: #007f00
+}
+.alpha-separator {
+	FONT-SIZE: 0px; BACKGROUND: url(/html/themes/classic/color_schemes/01/portlet_title_bg_x.gif) repeat-x; HEIGHT: 1px
+}
+A.alpha {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; TEXT-DECORATION: none
+}
+A.alpha:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+FONT.alpha {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000
+}
+.beta {
+	BACKGROUND-COLOR: #90abcc
+}
+.beta-gradient {
+	BACKGROUND: url(/html/themes/classic/color_schemes/01/portlet_menu_bg_gradient.gif) repeat-x
+}
+.beta-neg-alert {
+	COLOR: #ff0000
+}
+.beta-pos-alert {
+	COLOR: #007f00
+}
+.beta-separator {
+	FONT-SIZE: 0px; BACKGROUND: url(/html/themes/classic/color_schemes/01/portlet_menu_bg_x.gif) repeat-x; HEIGHT: 1px
+}
+A.beta {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; TEXT-DECORATION: none
+}
+A.beta:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.beta {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000
+}
+.gamma {
+	BACKGROUND-COLOR: #ffffff
+}
+.gamma-gradient {
+	BACKGROUND: url(/html/themes/classic/color_schemes/01/portlet_bg_x.gif) repeat-x
+}
+.gamma-neg-alert {
+	COLOR: #ff0000
+}
+.gamma-pos-alert {
+	COLOR: #007f00
+}
+.gamma-tab {
+	PADDING-LEFT: 0px; PADDING-BOTTOM: 27px; MARGIN: 0px 0px 15px; BORDER-BOTTOM: #90abcc 1px solid
+}
+.gamma-tab UL {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #cccccc 1px solid; DISPLAY: inline; PADDING-LEFT: 10px; BACKGROUND: #f6f6f6; FLOAT: left; PADDING-BOTTOM: 2px; BORDER-LEFT: #cccccc 1px solid; COLOR: #cccccc; LINE-HEIGHT: 22px; MARGIN-RIGHT: 8px; PADDING-TOP: 2px; BORDER-BOTTOM: #90abcc 1px solid; LIST-STYLE-TYPE: none; TEXT-DECORATION: none
+}
+.gamma-tab LI {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #cccccc 1px solid; DISPLAY: inline; PADDING-LEFT: 10px; BACKGROUND: #f6f6f6; FLOAT: left; PADDING-BOTTOM: 2px; BORDER-LEFT: #cccccc 1px solid; COLOR: #cccccc; LINE-HEIGHT: 22px; MARGIN-RIGHT: 8px; PADDING-TOP: 2px; BORDER-BOTTOM: #90abcc 1px solid; LIST-STYLE-TYPE: none; TEXT-DECORATION: none
+}
+.gamma-tab UL.current {
+	BORDER-RIGHT: #90abcc 1px solid; BORDER-TOP: #90abcc 1px solid; BACKGROUND: #ffffff; BORDER-LEFT: #90abcc 1px solid; COLOR: #000000; BORDER-BOTTOM: #ffffff 1px solid
+}
+.gamma-tab LI.current {
+	BORDER-RIGHT: #90abcc 1px solid; BORDER-TOP: #90abcc 1px solid; BACKGROUND: #ffffff; BORDER-LEFT: #90abcc 1px solid; COLOR: #000000; BORDER-BOTTOM: #ffffff 1px solid
+}
+.gamma-tab LI A {
+	COLOR: #777777
+}
+.gamma-tab LI.current A {
+	COLOR: #000000
+}
+.gamma-tab LI.toggle {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: right; BORDER-LEFT: 0px; MARGIN-RIGHT: 0px; BORDER-BOTTOM: 0px
+}
+A.gamma {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; TEXT-DECORATION: none
+}
+A.gamma:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+FONT.gamma {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000
+}
+.bg {
+	BACKGROUND-COLOR: #ffffff
+}
+.bg-neg-alert {
+	COLOR: #ff0000
+}
+.bg-pos-alert {
+	COLOR: #007f00
+}
+A.bg {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000000; TEXT-DECORATION: none
+}
+A.bg:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+FONT.bg {
+	COLOR: #000000
+}
+#layout-outer-side-decoration {
+	HEIGHT: 100%; BACKGROUND-COLOR: #e9eff5
+}
+#layout-inner-side-decoration {
+	MARGIN: 0px auto; HEIGHT: 100%; BACKGROUND-COLOR: #ffffff
+}
+#layout-box {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; MARGIN: 0px auto; PADDING-TOP: 10px; TEXT-ALIGN: left
+}
+#layout-top-banner {
+	Z-INDEX: 3; POSITION: relative; HEIGHT: 75px; TEXT-ALIGN: left
+}
+#layout-top-banner * {
+	WHITE-SPACE: nowrap
+}
+#portal-dock {
+	RIGHT: 10px; WIDTH: 54px; POSITION: absolute; TOP: 25px; HEIGHT: 54px
+}
+#portal-dock-title {
+	RIGHT: 10px; POSITION: absolute; TOP: 0px; HEIGHT: 25px; TEXT-ALIGN: right
+}
+.portal-dock-box {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 0px; LEFT: 0px; PADDING-BOTTOM: 2px; WIDTH: 54px; CURSOR: pointer; PADDING-TOP: 2px; POSITION: absolute; TOP: 0px; HEIGHT: 54px
+}
+.portal-dock-box DIV {
+	BACKGROUND-COLOR: #5890d2
+}
+#layout-user-menu {
+	POSITION: relative; TEXT-ALIGN: right
+}
+.layout-my-places {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #cccccc 1px solid; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #ffffff
+}
+.layout-my-places-arrow {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BACKGROUND-COLOR: #cccccc
+}
+#portal-dock-my-places {
+	CURSOR: default; PADDING-TOP: 2px; POSITION: relative; TEXT-ALIGN: right
+}
+#portal-dock-my-places TABLE {
+	FLOAT: right
+}
+#portal-dock-my-places UL {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; RIGHT: 0px; MARGIN: 0px; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; POSITION: absolute; TOP: 20px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: left
+}
+#portal-dock-my-places UL LI {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; CURSOR: pointer; PADDING-TOP: 2px; WHITE-SPACE: nowrap
+}
+#layout-global-search {
+	
+}
+#layout-nav-more-menu LI {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+#layout-nav-container {
+	Z-INDEX: 2; FLOAT: left
+}
+#layout-nav-divider {
+	CLEAR: both; FONT-SIZE: 0px; MARGIN-BOTTOM: 10px; HEIGHT: 10px
+}
+.layout-nav-divider {
+	BACKGROUND-COLOR: #c9d6e6
+}
+.layout-nav-selected {
+	BACKGROUND-COLOR: #5890d2
+}
+.layout-nav-tabs-box {
+	POSITION: relative; HEIGHT: 27px
+}
+.layout-tab {
+	MARGIN-TOP: 1px; FONT-WEIGHT: bold; FLOAT: left; MARGIN-RIGHT: 1px; POSITION: relative; HEIGHT: 27px; BACKGROUND-COLOR: #c9d6e6; TEXT-ALIGN: right
+}
+#layout-tab-add {
+	MARGIN-TOP: 1px; FONT-WEIGHT: bold; FLOAT: left; MARGIN-RIGHT: 1px; POSITION: relative; HEIGHT: 27px; BACKGROUND-COLOR: #c9d6e6; TEXT-ALIGN: right
+}
+.layout-tab A {
+	COLOR: #000000
+}
+#layout-tab-add {
+	FONT-WEIGHT: normal; COLOR: #000000; BACKGROUND-COLOR: #ffffff
+}
+#layout-tab-add A {
+	FONT-WEIGHT: normal; COLOR: #000000; BACKGROUND-COLOR: #ffffff
+}
+#layout-tab-selected {
+	COLOR: #ffffff; BACKGROUND-COLOR: #5890d2
+}
+#layout-tab-selected A {
+	COLOR: #ffffff; BACKGROUND-COLOR: #5890d2
+}
+.layout-tab-text {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 6px
+}
+.layout-tab-text {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 6px
+}
+.layout-tab-text * {
+	WHITE-SPACE: nowrap
+}
+.layout-tab-text-editing {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.layout-tab-close {
+	MARGIN: 6px 3px 0px 0px
+}
+.layout-tab-input {
+	MARGIN: 6px 2px 0px 0px
+}
+#layout-content-outer-decoration {
+	
+}
+#layout-bottom-container {
+	TEXT-ALIGN: left
+}
+.layout-add-select-style {
+	
+}
+.portal-add-content {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px
+}
+.portal-tool-tip {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 0.9em; PADDING-BOTTOM: 2px; BORDER-LEFT: #000000 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #ffffcc
+}
+.layout-column-arrow-up {
+	FONT-SIZE: 0px; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/html/themes/classic/images/arrows/arrow-up.png', sizingMethod='scale'); WIDTH: 40px; POSITION: absolute; HEIGHT: 48px
+}
+.layout-column-arrow-down {
+	FONT-SIZE: 0px; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/html/themes/classic/images/arrows/arrow-down.png', sizingMethod='scale'); WIDTH: 40px; POSITION: absolute; HEIGHT: 48px
+}
+#layout-column_column-1 {
+	HEIGHT: 75px
+}
+#layout-column_column-2 {
+	HEIGHT: 75px
+}
+#layout-column_column-3 {
+	HEIGHT: 75px
+}
+#layout-column_column-4 {
+	HEIGHT: 75px
+}
+#layout-column_column-5 {
+	HEIGHT: 75px
+}
+.layout-column-highlight {
+	BACKGROUND: url(/html/themes/classic/images/common/diagonal-lines.gif)
+}
+.portlet-dragging-placeholder {
+	BACKGROUND-COLOR: #e7edf4
+}
+#portlet-place-holder DIV {
+	BACKGROUND-COLOR: #90abcc
+}
+.portlet-loading {
+	MARGIN-TOP: 10px; BACKGROUND: url(/html/themes/classic/images/progress_bar/loading_animation.gif) no-repeat left top; PADDING-TOP: 40px; TEXT-ALIGN: left
+}
+.portlet-shadow-tl DIV {
+	FONT-SIZE: 0px; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/html/themes/classic/images/shadow/shade-tl.png', sizingMethod='scale'); WIDTH: 4px; HEIGHT: 3px
+}
+.portlet-shadow-tc {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/html/themes/classic/images/shadow/shade-tc.png', sizingMethod='scale')
+}
+.portlet-shadow-tr DIV {
+	FONT-SIZE: 0px; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/html/themes/classic/images/shadow/shade-tr.png', sizingMethod='scale'); WIDTH: 4px; HEIGHT: 3px
+}
+.portlet-shadow-ml {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/html/themes/classic/images/shadow/shade-ml.png', sizingMethod='scale')
+}
+.portlet-shadow-mr {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/html/themes/classic/images/shadow/shade-mr.png', sizingMethod='scale')
+}
+.portlet-shadow-bl DIV {
+	FONT-SIZE: 0px; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/html/themes/classic/images/shadow/shade-bl.png', sizingMethod='scale'); WIDTH: 8px; HEIGHT: 7px
+}
+.portlet-shadow-bc {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/html/themes/classic/images/shadow/shade-bc.png', sizingMethod='scale')
+}
+.portlet-shadow-br DIV {
+	FONT-SIZE: 0px; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/html/themes/classic/images/shadow/shade-br.png', sizingMethod='scale'); WIDTH: 8px; HEIGHT: 7px
+}
+.portlet-container {
+	BACKGROUND-COLOR: #ffffff
+}
+.portlet-box {
+	BORDER-RIGHT: #9fb7d3 1px solid; BORDER-TOP: #9fb7d3 1px solid; MARGIN-TOP: 1px; BORDER-LEFT: #9fb7d3 1px solid; BORDER-BOTTOM: #9fb7d3 1px solid
+}
+.portlet-minimum-height {
+	HEIGHT: 1px
+}
+.portlet-header-bar {
+	BORDER-RIGHT: #9fb7d3 1px solid; BORDER-TOP: #9fb7d3 1px solid; BACKGROUND: url(/html/themes/classic/color_schemes/01/button_gradient.gif) #9fb7d3 repeat-x left center; BORDER-LEFT: #9fb7d3 1px solid; BORDER-BOTTOM: #9fb7d3 1px solid; POSITION: relative
+}
+.portlet-borderless-container {
+	POSITION: relative
+}
+.portlet-borderless-bar {
+	FONT-SIZE: 0.8em; TEXT-ALIGN: left
+}
+.portlet-wrap-title {
+	POSITION: relative; HEIGHT: 20px
+}
+.portlet-title {
+	FONT-WEIGHT: bold; LEFT: 5px; COLOR: #000000; POSITION: absolute; TOP: 3px
+}
+.portlet-small-icon-bar {
+	PADDING-LEFT: 2px; RIGHT: 2px; POSITION: absolute; TOP: 3px
+}
+.portlet-spacer {
+	FONT-SIZE: 0px; HEIGHT: 10px
+}
+.portlet-font {
+	COLOR: #000000
+}
+.portlet-font A {
+	COLOR: #000000
+}
+.portlet-font-dim {
+	COLOR: #000080
+}
+.portlet-msg-status {
+	COLOR: #000000; FONT-STYLE: italic
+}
+.portlet-msg-info {
+	COLOR: #000000
+}
+.portlet-msg-error {
+	COLOR: #ff0000
+}
+.portlet-msg-alert {
+	COLOR: #ff0000; FONT-STYLE: italic
+}
+.portlet-msg-success {
+	COLOR: #007f00
+}
+.portlet-section-header {
+	FONT-WEIGHT: bold; BACKGROUND: #acb5d1; COLOR: #000000
+}
+.portlet-section-header A {
+	COLOR: #000000
+}
+.portlet-section-body {
+	BACKGROUND: #e7edf4; COLOR: #000000
+}
+.portlet-section-body-hover {
+	BACKGROUND: #e0f0fc; COLOR: #000000
+}
+TR.portlet-section-body:hover {
+	BACKGROUND: #e0f0fc; COLOR: #000000
+}
+.portlet-section-body A {
+	COLOR: #000000
+}
+.portlet-section-body-hover A {
+	COLOR: #000000
+}
+TR.portlet-section-body:hover A {
+	COLOR: #000000
+}
+.portlet-section-alternate {
+	BACKGROUND: #d3deeb; COLOR: #000000
+}
+.portlet-section-alternate-hover {
+	BACKGROUND: #e0f0fc; COLOR: #000000
+}
+TR.portlet-section-alternate:hover {
+	BACKGROUND: #e0f0fc; COLOR: #000000
+}
+.portlet-section-alternate A {
+	COLOR: #000000
+}
+.portlet-section-alternate-hover A {
+	COLOR: #000000
+}
+TR.portlet-section-alternate:hover A {
+	COLOR: #000000
+}
+.portlet-section-selected {
+	BACKGROUND: #e0f0fc; COLOR: #000000
+}
+.portlet-section-selected-hover {
+	BACKGROUND: #e0f0fc; COLOR: #000000
+}
+TR.portlet-section-selected:hover {
+	BACKGROUND: #e0f0fc; COLOR: #000000
+}
+.portlet-section-selected A {
+	COLOR: #000000
+}
+.portlet-section-selected-hover A {
+	COLOR: #000000
+}
+TR.portlet-section-selected:hover A {
+	COLOR: #000000
+}
+.portlet-section-subheader {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; BACKGROUND: #e0e1ed; PADDING-BOTTOM: 2px; COLOR: #000000; PADDING-TOP: 2px
+}
+.portlet-section-footer {
+	COLOR: #000000
+}
+.portlet-section-text {
+	COLOR: #000000
+}
+.portlet-form-label {
+	COLOR: #000000
+}
+.portlet-form-input-field {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.portlet-form-button {
+	BORDER-RIGHT: #9fb7d3 1px solid; BORDER-TOP: #9fb7d3 1px solid; BACKGROUND: url(/html/themes/classic/color_schemes/01/button_gradient.gif) repeat-x; BORDER-LEFT: #9fb7d3 1px solid; BORDER-BOTTOM: #9fb7d3 1px solid
+}
+.portlet-icon-label {
+	COLOR: #000000
+}
+.portlet-dlg-icon-label {
+	COLOR: #000000
+}
+.portlet-form-field-label {
+	COLOR: #000000
+}
+.portlet-form-field {
+	COLOR: #000000
+}
+TR.even {
+	COLOR: #000000; BACKGROUND-COLOR: #90abcc
+}
+TR.odd {
+	COLOR: #000000; BACKGROUND-COLOR: #ffffff
+}
